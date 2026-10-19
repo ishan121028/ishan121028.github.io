@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#fafaf7">
+    <meta name="description" content="Ishan Upadhyay, Member of Technical Staff at Adobe and IIT Bombay graduate. Experience in cross-platform engineering, developer tools, applied AI, and research.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ishan Upadhyay — Software Engineer">
+    <meta property="og:description" content="Engineering at Adobe. Research in AI evaluation and scientific computing. Selected work, publications, and writing.">
+    <meta property="og:url" content="https://ishan121028.github.io/">
+    <meta property="og:image" content="https://ishan121028.github.io/assets/ishan-upadhyay.jpg">
+    <meta property="og:image:alt" content="Ishan Upadhyay">
+    <meta property="og:image:width" content="903">
+    <meta property="og:image:height" content="1000">
+    <meta name="twitter:card" content="summary">
+    <title>Ishan Upadhyay — Software Engineer</title>
+    <link rel="canonical" href="https://ishan121028.github.io/">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top" aria-label="Ishan Upadhyay, home">Ishan Upadhyay<span aria-hidden="true">.</span></a>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">+</span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#experience">Experience</a>
+          <a href="#work">Work</a>
+          <a href="#writing">Writing</a>
+          <a href="#research">Research</a>
+          <a href="#about">About</a>
+          <a class="nav-cv" href="./cv.html" target="_blank" rel="noopener noreferrer">CV <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="main-content" tabindex="-1">
+      <section class="hero" id="top" aria-labelledby="name">
+        <div class="hero-main">
+          <p class="hero-role">Member of Technical Staff at Adobe</p>
+          <h1 id="name">Ishan Upadhyay</h1>
+          <p class="hero-description">I build cross-platform software and developer tools for Creative Cloud Desktop. My work spans C++ systems, applied AI, and research in model evaluation and computational biology.</p>
+          <div class="hero-links">
+            <a class="button" href="mailto:ishan.upadhyay.iitb@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+            <a class="inline-link" href="./cv.html" target="_blank" rel="noopener noreferrer">View CV <span aria-hidden="true">↗</span></a>
+            <a class="inline-link" href="https://github.com/ishan121028" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <img src="./assets/ishan-upadhyay.jpg" alt="Ishan Upadhyay" width="903" height="1000" fetchpriority="high" decoding="async">
+        </figure>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-heading">
+        <div class="section-heading"><h2 id="experience-heading">Experience</h2><span class="section-note">Industry &amp; product engineering</span></div>
+        <article class="experience-entry">
+          <div class="entry-meta"><a class="organization" href="https://www.adobe.com/" target="_blank" rel="noopener noreferrer">Adobe <span aria-hidden="true">↗</span></a><p>May 2025 — present</p></div>
+          <div class="entry-body">
+            <h3>Member of Technical Staff</h3>
+            <p class="entry-context">Creative Cloud Desktop · Windows &amp; macOS</p>
+            <p>I work on C++ platform layers, React interfaces, and developer tooling for Creative Cloud Desktop, a product serving 50M+ users.</p>
+            <ul class="experience-points">
+              <li>Built <a href="#patrol">Patrol</a>, a multi-agent system for production debugging and draft pull requests, with human approval required for write actions.</li>
+              <li>Delivered an Adobe Express Photos cross-platform integration prototype in under five weeks.</li>
+              <li>Implemented incremental feature-flag caching, reducing redundant network calls and saving approximately $200K in service costs, with a rollback mechanism.</li>
+              <li>Named inventor on a browser-to-desktop communication patent application, currently under filing.</li>
+            </ul>
+            <p class="recognition"><strong>Recognition</strong> Adobe Special Contribution Award for work including Patrol, cross-platform integration, and the patent application.</p>
+          </div>
+        </article>
+        <article class="experience-entry">
+          <div class="entry-meta"><span class="organization">Adobe</span><p>May — July 2024</p></div>
+          <div class="entry-body">
+            <h3>Product Engineering Intern</h3>
+            <p class="entry-context">Creative Cloud Desktop · Recommendation systems</p>
+            <p>Developed app-recommendation models using LSTMs, collaborative filtering, and T5. The T5 next-best-app model achieved 80% top-5 accuracy; LSTM models reached 54% for Express and 56% for Firefly.</p>
+            <p>Deployed the models with FastAPI and built a Streamlit interface for interactive evaluation.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-heading">
+        <div class="section-heading"><h2 id="work-heading">Selected work</h2><span class="section-note">Systems I have built</span></div>
+        <div class="featured-work">
+          <article class="work-entry" id="patrol">
+            <p class="work-context">Adobe · Developer tooling</p>
+            <h3>Patrol</h3>
+            <p>I solo-built a debugging agent that investigates production issues, assembles evidence-backed root-cause analyses, and drafts pull requests.</p>
+            <div class="work-result"><strong>100+</strong><span>production issues resolved<br>60–70% end-to-end resolution rate</span></div>
+            <details>
+              <summary>Technical contribution</summary>
+              <ul><li>Designed a supervisor that coordinates parallel specialist agents.</li><li>Kept write actions behind human approval rather than giving the system unrestricted access.</li><li>Added a memory write-guard to validate corrections before persisting them.</li></ul>
+            </details>
+            <p class="technology-line">Multi-agent systems · C++ · TypeScript</p>
+          </article>
+          <article class="work-entry" id="radiology">
+            <p class="work-context">Independent project · Document processing</p>
+            <h3>RadiologyAI</h3>
+            <p>A prototype for extracting and searching information in radiology reports. I integrated LandingAI’s document extraction with Pathway’s streaming document pipeline.</p>
+            <p>Incoming PDFs are parsed into structured fields and indexed for retrieval through REST and MCP interfaces.</p>
+            <details>
+              <summary>Technical contribution</summary>
+              <ul><li>Implemented a custom Pathway parser for LandingAI’s Agentic Document Extraction API.</li><li>Defined a schema for study types, findings, impressions, and other report metadata.</li><li>Exposed document retrieval and patient-ID search through the application’s interfaces.</li></ul>
+            </details>
+            <div class="work-links"><a class="inline-link" href="https://github.com/ishan121028/RadiologyAI" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a><a class="inline-link" href="#writing">Read the article <span aria-hidden="true">↓</span></a></div>
+            <p class="technology-line">Python · Pathway · LandingAI · MCP</p>
+          </article>
+        </div>
+        <h3 class="subsection-heading">Earlier projects</h3>
+        <div class="earlier-projects">
+          <article id="unitrain"><h4>UniTrain</h4><p>Contributed to an open-source Python library for classification, segmentation, GAN training, and FastAPI model inference.</p><span>2023 · Hello FOSS, IIT Bombay</span></article>
+          <article id="rover"><h4>IIT Bombay Mars Rover</h4><p>Built image super-resolution and rock-classification models for the rover’s perception subsystem. The team won Best Autonomous at IRC and Best Navigation at ERC.</p><span>2022–2023 · Computer vision</span></article>
+          <article id="lyrics"><h4>Lyric generation with minGPT</h4><p>Trained a lyric-generation model and compared single- and multi-threaded inference through a local FastAPI server.</p><span>2023 · Independent project</span></article>
+        </div>
+      </section>
+
+      <section class="section" id="writing" aria-labelledby="writing-heading">
+        <div class="section-heading"><h2 id="writing-heading">Writing</h2><span class="section-note">Technical articles &amp; project write-ups</span></div>
+        <article class="writing-entry">
+          <div class="writing-publisher"><span class="publisher-name">Pathway</span><span>Engineering article</span></div>
+          <div class="writing-body">
+            <h3><a href="https://pathway.com/framework/blog/landing-ai" target="_blank" rel="noopener noreferrer">Building a Real-Time Radiology AI System with Pathway and LandingAI <span aria-hidden="true">↗</span></a></h3>
+            <p>A walkthrough of RadiologyAI: extracting structured information from radiology PDFs, indexing new documents as they arrive, and exposing retrieval through REST and MCP.</p>
+            <a class="inline-link" href="https://pathway.com/framework/blog/landing-ai" target="_blank" rel="noopener noreferrer">Read on Pathway <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-heading">
+        <div class="section-heading"><h2 id="research-heading">Research</h2><span class="section-note">Publications &amp; collaborations</span></div>
+        <article class="publication-entry" id="grace">
+          <div class="publication-meta"><span class="publication-venue">ACL 2025</span><span>Co-author</span></div>
+          <div class="publication-body">
+            <h3>GRACE: A Granular Benchmark for Evaluating Model Calibration against Human Calibration</h3>
+            <p class="publication-authors">Yoo Yeon Sung, Eve Fleisig, Yu Hou, <strong>Ishan Upadhyay</strong>, Jordan Boyd-Graber</p>
+            <p>With Prof. Jordan Boyd-Graber at the University of Maryland, I built the question-authoring platform used by 100+ writers, including AI feedback, Google OAuth, and collaborative drafting through Google Docs.</p>
+            <div class="publication-links"><a class="inline-link" href="https://aclanthology.org/2025.acl-long.962/" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a class="inline-link" href="https://aclanthology.org/2025.acl-long.962.pdf" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a><button class="citation-button" id="citation-toggle" aria-expanded="false" aria-controls="grace-citation" hidden>BibTeX</button></div>
+            <div class="citation" id="grace-citation" hidden><pre>@inproceedings{sung-etal-2025-grace,
+  title = {{GRACE}: A Granular Benchmark for Evaluating Model Calibration against Human Calibration},
+  author = {Sung, Yoo Yeon and Fleisig, Eve and Hou, Yu and Upadhyay, Ishan and Boyd-Graber, Jordan},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  year = {2025},
+  pages = {19586--19587},
+  doi = {10.18653/v1/2025.acl-long.962},
+  url = {https://aclanthology.org/2025.acl-long.962/}
+}</pre></div>
+          </div>
+        </article>
+        <article class="publication-entry" id="alphacross">
+          <div class="publication-meta"><span class="publication-venue">Molecular &amp; Cellular Proteomics</span><span>2025 · Co-author</span></div>
+          <div class="publication-body">
+            <h3>AlphaCross-XL: A Seamless Tool for Automated and Proteome-Scale Mapping of Cross-Linked Peptides Onto 3D Protein Structures</h3>
+            <p>Worked with Prof. Sanjeeva Srivastava on a React/Node.js interface for protein cross-linking analysis, integrating ProDy, PyMOL, and pyfastx, and improving computation through parallelization.</p>
+            <div class="publication-links"><a class="inline-link" href="https://doi.org/10.1016/j.mcpro.2025.101057" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a class="inline-link" href="https://github.com/sanjyotshenoy/alphacross-xl" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="publication-entry" id="qanta">
+          <div class="publication-meta"><span class="publication-venue">ICML 2026 workshop</span><span>Contributor</span></div>
+          <div class="publication-body">
+            <h3>QANTA 2026: Efficient, Incremental Multimodal Question Answering</h3>
+            <p>Lead the Question Authoring Interface for human–AI co-authoring of text-and-image quizbowl questions, with Prof. Jordan Boyd-Graber and collaborators at UMD and UC Berkeley. I also contribute to workshop and competition organization.</p>
+            <div class="publication-links"><a class="inline-link" href="https://qanta-org.github.io/competition/2026/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a><a class="inline-link" href="https://icml.cc/virtual/2026/workshop/54061" target="_blank" rel="noopener noreferrer">Workshop <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="section-heading"><h2 id="about-heading">About</h2></div>
+        <div class="about-layout">
+          <div class="education">
+            <h3>Indian Institute of<br>Technology Bombay</h3>
+            <p>B.Tech. Aerospace Engineering<br>Class of 2025 · CPI 8.08 / 10</p>
+          </div>
+          <div class="about-body">
+            <p>I graduated from IIT Bombay in 2025 and joined Adobe as a Member of Technical Staff. Alongside product engineering, I have contributed to research in model calibration, multimodal question answering, and protein-structure analysis.</p>
+            <p>At IIT Bombay, I served as Institute Manager for Web and Coding in 2023–24. I led a team of 10, helped coordinate 70+ summer projects, and helped teach Flutter, NLP, and DSA courses reaching 3,000+ students. I also mentored 24 freshmen as a CS101 teaching assistant.</p>
+            <dl class="skills"><div><dt>Languages</dt><dd>Python, C++, TypeScript, JavaScript, C</dd></div><div><dt>Frameworks</dt><dd>React, Node.js, FastAPI, PyTorch, TensorFlow, CEF</dd></div></dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+        <div><h2 id="contact-heading">Contact</h2><p>Email is the best way to reach me.</p></div>
+        <div class="contact-details"><a class="email-link" href="mailto:ishan.upadhyay.iitb@gmail.com">ishan.upadhyay.iitb@gmail.com <span aria-hidden="true">↗</span></a><div><a class="inline-link" href="https://www.linkedin.com/in/ishan-upadhyay" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="inline-link" href="https://github.com/ishan121028" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="inline-link" href="./cv.html" target="_blank" rel="noopener noreferrer">CV <span aria-hidden="true">↗</span></a></div></div>
+      </section>
+    </main>
+
+    <footer class="container site-footer"><span>© <span id="copyright-year">2026</span> Ishan Upadhyay</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; color: #242923; background: #fafaf7; font-size: 13px; line-height: 1.65; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #365e48; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.toolbar { max-width: 880px; padding: 24px 20px; margin: auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 11px; color: #6d7277; }
+.toolbar a { text-decoration: none; }
+main { max-width: 880px; margin: 0 auto 50px; background: #fff; border: 1px solid #e6e5e2; border-radius: 8px; padding: 50px 60px; }
+header { padding-bottom: 20px; border-bottom: 1px solid #ddd7cf; }
+.eyebrow { color: #365e48; font-size: 9px; letter-spacing: .1em; }
+h1 { font-weight: 500; font-size: 42px; line-height: 1.2; margin: 12px 0; letter-spacing: -.055em; }
+.subtitle { color: #5b6269; font-size: 12px; }
+.contact { font-size: 11px; overflow-wrap: anywhere; }
+section { margin-top: 24px; }
+h2 { color: #365e48; font-size: 11px; text-transform: uppercase; letter-spacing: .07em; font-weight: 600; border-bottom: 1px solid #e9e6e0; padding-bottom: 7px; margin: 0 0 13px; }
+article { margin-bottom: 20px; }
+.row { display: flex; justify-content: space-between; align-items: baseline; gap: 15px; }
+h3 { font-size: 13px; font-weight: 600; margin: 0; }
+.row > span { font-size: 10px; color: #6b7175; text-align: right; }
+p { margin: 6px 0; }
+.authors { font-size: 11px; color: #6b7175; }
+ul { padding-left: 18px; margin: 7px 0 0; }
+li { padding-left: 3px; margin-bottom: 5px; }
+strong { font-weight: 600; }
+@media (max-width: 600px) {
+  main { padding: 28px 24px; margin: 0 12px 24px; }
+  h1 { font-size: 35px; }
+  .row { display: block; }
+  .row > span { display: block; text-align: left; margin-top: 3px; }
+}
+@page { size: A4; margin: 15mm; }
+@media print {
+  :root { font-size: 9px; line-height: 1.5; background: white; }
+  .toolbar { display: none; }
+  main { border: 0; border-radius: 0; padding: 0; margin: 0; max-width: none; }
+  h1 { font-size: 30px; margin: 7px 0; }
+  header { padding-bottom: 9px; }
+  h2 { font-size: 9px; margin-bottom: 8px; padding-bottom: 4px; }
+  h3 { font-size: 10px; }
+  .row > span { font-size: 8px; }
+  section { margin-top: 16px; }
+  article { margin-bottom: 11px; break-inside: avoid; }
+  .eyebrow { font-size: 7px; }
+  .subtitle { font-size: 10px; }
+  .contact, .authors { font-size: 8px; }
+  a { color: inherit; text-decoration: none; }
+  p { margin: 4px 0; }
+  li { margin-bottom: 3px; }
+  .row { display: flex; }
+}
